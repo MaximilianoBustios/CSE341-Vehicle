@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MaximilianoBustios/CSE341-node/issues"
   },
-  "homepage": "https://github.com/MaximilianoBustios/CSE341-node#readme"
+  "homepage": "https://github.com/MaximilianoBustios/CSE341-node#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
