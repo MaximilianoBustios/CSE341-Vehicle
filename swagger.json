@@ -5,7 +5,7 @@
     "description": "Vehicles Api",
     "version": "1.0.0"
   },
-  "host": "https://cse341-vehicle.onrender.com",
+  "host": "cse341-vehicle.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
