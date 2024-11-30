@@ -1,13 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Users Api",
-    "description": "Users Api",
+    "title": "Vehicles Api",
+    "description": "Vehicles Api",
     "version": "1.0.0"
   },
-  "host": "cse341-node-g8i6.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -24,10 +25,10 @@
         }
       }
     },
-    "/users/": {
+    "/vehicles/": {
       "get": {
         "tags": [
-          "Users"
+          "Vehicles"
         ],
         "description": "",
         "produces": [
@@ -41,7 +42,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Vehicles"
         ],
         "description": "",
         "parameters": [
@@ -51,19 +52,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "make": {
                   "example": "any"
                 },
-                "lastName": {
+                "model": {
                   "example": "any"
                 },
-                "email": {
+                "year": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "price": {
                   "example": "any"
                 },
-                "birthday": {
+                "type": {
+                  "example": "any"
+                },
+                "mileage": {
+                  "example": "any"
+                },
+                "status": {
                   "example": "any"
                 }
               }
@@ -80,10 +87,10 @@
         }
       }
     },
-    "/users/{id}": {
+    "/vehicles/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Vehicles"
         ],
         "description": "",
         "produces": [
@@ -98,14 +105,14 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "Users"
+          "Vehicles"
         ],
         "description": "",
         "parameters": [
@@ -121,16 +128,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "username": {
+                "make": {
                   "example": "any"
                 },
-                "email": {
+                "model": {
                   "example": "any"
                 },
-                "name": {
+                "year": {
                   "example": "any"
                 },
-                "ipaddress": {
+                "price": {
+                  "example": "any"
+                },
+                "type": {
+                  "example": "any"
+                },
+                "mileage": {
+                  "example": "any"
+                },
+                "status": {
                   "example": "any"
                 }
               }
@@ -148,7 +164,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Vehicles"
         ],
         "description": "",
         "parameters": [
