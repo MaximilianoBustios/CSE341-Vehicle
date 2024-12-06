@@ -5,11 +5,11 @@
     "description": "Vehicles Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-vehicle.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/login": {
